@@ -172,7 +172,7 @@ const DetectFaceExtract = async (client, image_base_url) => {
         // console.log('======================================')
       });
     }),
-  );
+  ).catch(err => console.log(err.message));
 };
 
 module.exports = DetectFaceExtract;

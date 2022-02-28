@@ -16,4 +16,4 @@ const credentials = new microsoftRest.ApiKeyCredentials({
 
 const client = new Face.FaceClient(credentials, ENDPOINT);
 
-module.exports = {client, IMAGE_BASE_URL: process.env.IMAGE_BASE_URL};
+module.exports = { client, IMAGE_BASE_URL: process.env.IMAGE_BASE_URL };
