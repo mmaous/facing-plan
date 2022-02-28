@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@azure/cognitiveservices-face": "^5.0.0",
-    "@azure/ms-rest-js": "^2.6.0"
+    "@azure/ms-rest-js": "^2.6.0",
+    "dotenv": "^16.0.0"
   }
 }
