@@ -11,9 +11,18 @@ const person_group_id = uuidv4();
 
 // the main func
 const fire = async () => {
+  /**
+   * Uncomment one of these Statement
+   */
   await DetectFaceExtract(client, IMAGE_BASE_URL);
-  await FindSimilar(IMAGE_BASE_URL);
-  await IdentifyInPersonGroup(client, person_group_id);
+
+  //Uncomment whenever your ready
+  // await FindSimilar(IMAGE_BASE_URL);
+    
+  
+  //Uncomment whenever your ready
+  // await IdentifyInPersonGroup(client, person_group_id);
+  
   console.log('Done');
 };
 
