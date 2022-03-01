@@ -83,13 +83,13 @@ $ npm start
 
 - Here's what's included:
 
-  - img – Contains images.
-  - scripts – Contains JavaScript files (demos for Face client library).
-    - DetectFaceExtract.js - Defines a method which parses and prints the attribute data for each detected face.
-    - FindSimilar.js - Contains the code which takes a single detected face (source) and searches a set of other faces (target) to find matches (face search by image). When it finds a match, it prints the ID of the matched face to the console.
-    - IdentifyInPersonGroup.js - Contains set of functions which help to Identify a face, This operation takes an image of a person (or multiple people) and looks to find the stored person object associated with each face in the image (facial recognition search). It compares each detected face to a PersonGroup, a database of different Person objects whose facial features are known. `In order to do the Identify operation, you first need to create and train a PersonGroup.`
-  - config - Defines configurations for [Face Client Library](https://www.npmjs.com/package/@azure/cognitiveservices-face).
-  - index.js - Contains the main (fire) Function to test the scripts in `scripts` folder.
+  - `img` – Contains images.
+  - `scripts` – Contains JavaScript files (demos for Face client library).
+    - `DetectFaceExtract.js` - Defines a method which parses and prints the attribute data for each detected face.
+    - `FindSimilar.js` - Contains the code which takes a single detected face (source) and searches a set of other faces (target) to find matches (face search by image). When it finds a match, it prints the ID of the matched face to the console.
+    - `IdentifyInPersonGroup.js` - Contains set of functions which help to Identify a face, This operation takes an image of a person (or multiple people) and looks to find the stored person object associated with each face in the image (facial recognition search). It compares each detected face to a PersonGroup, a database of different Person objects whose facial features are known. `In order to do the Identify operation, you first need to create and train a PersonGroup.`
+  - `config` - Defines configurations for [Face Client Library](https://www.npmjs.com/package/@azure/cognitiveservices-face).
+  - `index.js` - Contains the main (fire) Function to test the scripts in `scripts` folder.
 
 [face api]: https://portal.azure.com/#create/Microsoft.CognitiveServicesFace
 [azure storage account]: https://portal.azure.com/#create/Microsoft.StorageAccount
