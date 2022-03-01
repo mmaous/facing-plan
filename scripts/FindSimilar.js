@@ -1,5 +1,5 @@
 const { DetectFaceRecognize } = require('./IdentifyInPersonGroup');
-const { client } = require('./client');
+const { client } = require('../config');
 
 const FindSimilar = async (image_base_url) => {
   console.log('========FIND SIMILAR========');

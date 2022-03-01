@@ -1,11 +1,11 @@
 'use strict';
 
 const { v4: uuidv4 } = require('uuid');
-const { IMAGE_BASE_URL, client } = require('./client');
-const { IdentifyInPersonGroup } = require('./IdentifyInPersonGroup');
-const FindSimilar = require('./FindSimilar');
+const { IMAGE_BASE_URL, client } = require('./config');
+const { IdentifyInPersonGroup } = require('./scripts/IdentifyInPersonGroup');
+const FindSimilar = require('./scripts/FindSimilar');
 
-const DetectFaceExtract = require('./DetectFaceExtract');
+const DetectFaceExtract = require('./scripts/DetectFaceExtract');
 
 const person_group_id = uuidv4();
 
