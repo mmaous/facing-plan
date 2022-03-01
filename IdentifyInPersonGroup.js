@@ -82,7 +82,7 @@ const WaitForPersonGroupTraining = async (person_group_id) => {
   }
 };
 
-const DetectFaceRecognize = async (url) => {
+const DetectFaceRecognize = async (client, url) => {
   // Detect faces from image URL. Since only recognizing, use the recognition model 4.
   // We use detection model 3 because we are only retrieving the qualityForRecognition attribute.
   // Result faces with quality for recognition lower than "medium" are filtered out.
@@ -167,4 +167,4 @@ const IdentifyInPersonGroup = async (client, image_base_url) => {
   console.log();
 };
 
-module.exports = IdentifyInPersonGroup
+module.exports = {IdentifyInPersonGroup, DetectFaceRecognize}

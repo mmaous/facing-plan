@@ -1,5 +1,7 @@
+const { DetectFaceRecognize } = require('./IdentifyInPersonGroup');
+const { client } = require('./client');
 
-const FindSimilar = async () => {
+const FindSimilar = async (image_base_url) => {
   console.log('========FIND SIMILAR========');
   console.log();
 
@@ -19,7 +21,7 @@ const FindSimilar = async () => {
     await Promise.all(
       target_image_file_names.map(async (target_image_file_name) => {
         // Detect faces from target image url.
-        var faces = await DetectFaceRecognize(
+        var faces = await DetectFaceRecognize( client,
           image_base_url + target_image_file_name,
         );
         console.log(
@@ -34,7 +36,7 @@ const FindSimilar = async () => {
   ).flat();
 
   // Detect faces from source image url.
-  let detected_faces = await DetectFaceRecognize(
+  let detected_faces = await DetectFaceRecognize(client,
     image_base_url + source_image_file_name,
   );
 
@@ -56,4 +58,4 @@ const FindSimilar = async () => {
   console.log();
 };
 
-module.exports = FindSimilar
+module.exports = FindSimilar;
